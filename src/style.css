@@ -1,64 +1,77 @@
 *{
-margin: 0px;
-padding: 0px;
-}
-
-body{
-    background-color: aquamarine;
-}
-
-h1, h2{
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-img{
-    position: absolute;
-    z-index: -1;
-    margin-left: 30%;
-}
-
-#corazon {
-    background-color: red;
-    display: inline-block;
-    height: 60px;
-    margin: 0 10px;
-    top: 0;
-    transform: rotate(-45deg);
-    position: absolute; 
-    left: 52%; 
-    top: 52%;
-    width: 60px;
-    animation: latido 1s infinite;
-}
-  
-  #corazon:before,
-  #corazon:after {
-    content: "";
-    background-color: red;
-    border-radius: 50%;
-    height: 60px;
-    position: absolute;
-    width: 60px;
+  margin: 0px;
+  padding: 0px;
   }
   
-  #corazon:before {
-    top: -25px;
-    left: 0;
+  body{
+    background-image: linear-gradient(to right, rgb(159, 237, 249), rgb(245, 229, 85));
   }
   
-  #corazon:after {
-    left: 25px;
-    top: 0;
+  h1, h2{
+      justify-content: center;
+      text-align: center;
+      margin-top: 20px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 0px white, 2px 2px 0px black;
   }
   
-  @keyframes latido {
-    0%, 100% {
-      transform: scale(1) rotate(-45deg);
+.container{
+  padding: 10px;
+  background-color: white;
+  
+}
+
+  img{
+      position: absolute;
+      z-index: -1;
+      margin-left: 30%;
+  }
+  
+  #corazon {
+      background-color: red;
+      display: inline-block;
+      height: 70px;
+      margin: 0 10px;
+      top: 0;
+      transform: rotate(-45deg);
+      position: absolute; 
+      left: 51.5%; 
+      top: 53%;
+      width: 70px;
+      animation: latido 1s infinite;
+  }
+    
+    #corazon:before,
+    #corazon:after {
+      content: "";
+      background-color: red;
+      border-radius: 40%;
+      height: 70px;
+      position: absolute;
+      width: 70px;
     }
-    50% {
-      transform: scale(1.1) rotate(-45deg);
+    
+    #corazon:before {
+      top: -25px;
+      left: 0;
     }
-  }
+    
+    #corazon:after {
+      left: 25px;
+      top: 0;
+    }
+    
+    @keyframes latido {
+      0%, 100% {
+        transform: scale(1) rotate(-45deg);
+      }
+      50% {
+        transform: scale(1.1) rotate(-45deg);
+      }
+    }
